@@ -9,7 +9,7 @@ var secret = "mysupersecretpassword";
 
 var mongoose = require('mongoose');
 var User = require('./models/user');
-mongoose.connect('mongodb://localhost/Breed');
+mongoose.connect('mongodb://dogapi:dogsarethebest@ds013574.mlab.com:13574/breed');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
